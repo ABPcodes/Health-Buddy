@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/bills_img_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/entertainment_img_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/general_img_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/grocery_img_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/shopping_ing_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/transport_ing_background.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/activity_main.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
