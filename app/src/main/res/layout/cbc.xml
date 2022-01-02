@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/WBCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+            <EditText
+                android:id="@+id/WBC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="White Blood Cell( per cu.mm. OR mcl)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RBCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/RBC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Red Blood Cell(millions cells/cmm)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PLCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/PLC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="PLATELET COUNT(cu.mm./microliter)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/HMBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/HMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="HAEMOGLOBIN(grams/dL)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PCVL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/PCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="PCV(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MCVL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/MCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Mean Cell Volume(fL)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MCHL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/MCH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Mean Cell Hemoglobin(pg)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MCHCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/MCHC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Mean Cell Hb Conc(g/dL)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RCDL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/RCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Red Cell Dist Width(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/NT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Neutrophil (%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LPL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/LP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Lymphocyte(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EPL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/EP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Eosinophil(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/PM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Polymorphs(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MCL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/MC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Monocytes (%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BPL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/BP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Basophils(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="30dp"
+            app:icon="@drawable/ic_baseline_analytics_24"
+            android:drawableStart=""
+            android:padding="12dp"
+            android:text="Check"
+            app:cornerRadius="110dp"
+            app:iconGravity="textStart">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="60dp"
+            android:background="#A18DCD"
+            android:padding="2dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            app:layout_constraintHorizontal_bias="0.382"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.511">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="NAME"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#4D5868CC"
+                    android:text="OUTPUT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="IDEAL RANGE"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="White Blood Cell"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="4000-10500"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="RED BLOD CELL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1501"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="4.2-5.9"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="PLATELET_COUNT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1502"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="150000-450000"
+
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="HAEMOGLOBIN"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1503"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="14.0-15.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="PCV"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1504"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="42-52"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="Mean Cell Volume"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1505"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="80-100"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text=" Mean Cell Hemoglobin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1506"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="27.0-32.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="MEAN_CELL_HB_CONC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1507"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="32.0-36.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="Red Cell Dist Width "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1508"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="11.5-14.5"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="NEUTROPHIL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1509"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="33-77"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="LYMPHOCYTE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="13-52"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="EOSINOPHIL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15011"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-5"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="POLYMORPHS"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15012"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="40-80"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="MONOCYTES"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15013"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-10"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="BASOPHILS"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15014"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-2"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

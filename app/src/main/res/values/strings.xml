@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DASHBOARD</string>
+    <string name="CHOLESTEROL">CHOLESTEROL</string>
+    <string name="TRLGLYCERIDE">TRLGLYCERIDE</string>
+    <string name="HDL_CHOLESTEROL">HDL CHOLESTEROL</string>
+    <string name="LDL_CHOLESTEROL">LDL CHOLESTEROL</string>
+    <string name="VLDL_CHOLESGEROL">VLDL CHOLESGEROL</string>
+    <string name="CHECK">CHECK</string>
+    <string name="CHOL_HDL_RATIO">CHOL/HDL RATIO</string>
+    <string name="LDL_HDL_RATIO">LDL/HDL RATIO</string>
+    <string name="NON_HDL_CHOLESTEROL">NON-HDL CHOLESTEROL</string>
+
 </resources>

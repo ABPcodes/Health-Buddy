@@ -92,6 +92,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"
                     android:gravity="center"
+                    android:id="@+id/cbc"
                     android:orientation="vertical">
 
                     <ImageView
@@ -137,6 +138,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"
                     android:gravity="center"
+                    android:id="@+id/lipid"
                     android:orientation="vertical">
 
                     <ImageView
