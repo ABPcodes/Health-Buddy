@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class CBCTABEL extends AppCompatActivity {
 
 
-    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15;
+    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16;
     boolean a = true;
     boolean b = true;
     boolean c = true;
@@ -53,6 +53,8 @@ public class CBCTABEL extends AppCompatActivity {
         t13 = (TextView) findViewById(R.id.textView15012);
         t14 = (TextView) findViewById(R.id.textView15013);
         t15 = (TextView) findViewById(R.id.textView15014);
+        t16 = (TextView) findViewById(R.id.dipoutput);
+
 
 
 
@@ -554,6 +556,25 @@ public class CBCTABEL extends AppCompatActivity {
                 o = false;
             }
 
+        }
+
+
+        if(a == true &&      b == true && c == true &&
+                d == true && e == true &&
+                f == true && g == true &&
+                h == true && i == true &&
+                j == true && k == true &&
+                l == true && m == true &&
+                n == true && o == true  )
+        {
+
+            t16.setText("CONGRATES! YOU REPORT IS NORMAL");
+
+        }
+
+        else
+        {
+            t16.setText("YOUR REPORT IS NOT NORMAL");
         }
 
 
