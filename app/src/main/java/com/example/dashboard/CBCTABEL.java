@@ -73,6 +73,7 @@ public class CBCTABEL extends AppCompatActivity {
         Double bp ;
 
 
+
         Intent cbcr = this.getIntent();
 
         wbc = cbcr.getDoubleExtra("wbc", 0);

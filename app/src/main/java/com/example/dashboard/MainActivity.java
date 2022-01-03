@@ -38,7 +38,7 @@ LinearLayout CBC,LIPID;
         LIPID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, lipid.class);
+                Intent intent2 = new Intent(MainActivity.this, lipid123.class);
                 startActivity(intent2);
             }
         });

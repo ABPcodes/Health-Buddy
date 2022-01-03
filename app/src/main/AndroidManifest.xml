@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
-            android:name=".CBCTABEL"
+            android:name=".LIPIDTABLE123"
             android:exported="false" />
         <activity
-            android:name=".lipid"
+            android:name=".lipid123"
+            android:exported="false" />
+        <activity
+            android:name=".CBCTABEL"
             android:exported="false" />
         <activity
             android:name=".cbc"
