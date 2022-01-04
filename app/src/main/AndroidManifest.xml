@@ -13,7 +13,28 @@
             android:name=".CBCTABEL"
             android:exported="false" />
         <activity
-            android:name=".lipid"
+            android:name=".lipid123"
+            android:exported="false" />
+        <activity
+            android:name=".LIPIDTABLE123"
+            android:exported="false" />
+        <activity
+            android:name=".hba1c"
+            android:exported="false" />
+        <activity
+            android:name=".HBA1CTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".crp"
+            android:exported="false" />
+        <activity
+            android:name=".CRPTABEL"
+            android:exported="false" />
+        <activity
+            android:name=".thyroid"
+            android:exported="false" />
+        <activity
+            android:name=".THYROIDTABLE"
             android:exported="false" />
         <activity
             android:name=".cbc"

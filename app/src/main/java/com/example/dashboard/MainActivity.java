@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
 
-LinearLayout CBC,LIPID;
+LinearLayout CBC,LIPID,HBA1C,THYROID,CRP;
 
 
     @Override
@@ -26,6 +26,9 @@ LinearLayout CBC,LIPID;
 
         CBC = (LinearLayout) findViewById(R.id.cbc);
         LIPID = (LinearLayout) findViewById(R.id.lipid);
+        THYROID = (LinearLayout) findViewById(R.id.thyroid);
+        CRP = (LinearLayout) findViewById(R.id.crp);
+        HBA1C = (LinearLayout) findViewById(R.id.hba1c);
 
         CBC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,14 +37,48 @@ LinearLayout CBC,LIPID;
                 startActivity(intent1);
             }
         });
-
         LIPID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, lipid.class);
+                Intent intent2 = new Intent(MainActivity.this , lipid123.class);
                 startActivity(intent2);
             }
         });
+//
+//
+        THYROID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this,thyroid.class);
+                startActivity(intent3);
+            }
+        });
+//
+
+        HBA1C.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this, hba1c.class);
+                startActivity(intent4);
+            }
+
+        });
+
+
+        CRP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(MainActivity.this, crp.class);
+                startActivity(intent5);
+            }
+
+        });
+
+
+
+
+
+
 
 
 
