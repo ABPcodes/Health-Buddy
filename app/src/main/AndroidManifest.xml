@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
+            android:name=".HBA1CTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".hba1c"
+            android:exported="false" />
+        <activity
             android:name=".CBCTABEL"
             android:exported="false" />
         <activity

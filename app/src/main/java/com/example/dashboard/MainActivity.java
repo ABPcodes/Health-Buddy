@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
 
-LinearLayout CBC,LIPID;
+LinearLayout CBC,LIPID,HBA1C;
 
 
     @Override
@@ -26,6 +26,7 @@ LinearLayout CBC,LIPID;
 
         CBC = (LinearLayout) findViewById(R.id.cbc);
         LIPID = (LinearLayout) findViewById(R.id.lipid);
+        HBA1C = (LinearLayout) findViewById(R.id.hba1c);
 
         CBC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,14 @@ LinearLayout CBC,LIPID;
             public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this, lipid.class);
                 startActivity(intent2);
+            }
+        });
+
+        HBA1C.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this,hba1c.class);
+                startActivity(intent4);
             }
         });
 

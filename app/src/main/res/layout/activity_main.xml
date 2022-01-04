@@ -238,6 +238,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"
                     android:gravity="center"
+                    android:id="@+id/hba1c"
                     android:orientation="vertical">
 
                     <ImageView
