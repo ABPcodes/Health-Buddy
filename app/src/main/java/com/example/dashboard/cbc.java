@@ -166,7 +166,7 @@ public class cbc extends AppCompatActivity {
                     Double mc = Double.parseDouble(e14.getText().toString());
                     Double bp = Double.parseDouble(e15.getText().toString());
 
-
+`
                     Intent cbci = new Intent(cbc.this,CBCTABEL.class);
 
                     cbci.putExtra("wbc",wbc);
