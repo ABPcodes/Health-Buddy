@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TSHl"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp">
+
+            <EditText
+                android:id="@+id/TSH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="TSHuI(U/ml)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Thyroxin_T4L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/Thyroxin_T4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Thyroxin_T4(ug/dl)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/T3_UptakeL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/T3_Uptake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="T3 Uptake(%)"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00090B8A"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperTextTextColor="@color/black"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/FTI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4D5868CC"
+                android:hint="Free thyroxin Index"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColorHighlight="#5E6691">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:padding="12dp"
+
+            android:text="Check"
+            app:cornerRadius="110dp"
+            app:iconGravity="textStart">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

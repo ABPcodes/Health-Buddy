@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".THYROIDTABLE">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A18DCD"
+        android:padding="2dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A18DCD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#4D5868CC"
+                android:text="NAME"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#4D5868CC"
+                android:text="OUTPUT"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#4D5868CC"
+                android:text="IDEAL RANGE"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:background="#A18DCD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="TSH"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1500"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="0.450-4.500"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:background="#A18DCD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="Thyroxin_T4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1501"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="4.5-12.0"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:background="#A18DCD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="T3_Uptake"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1502"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="24-39"
+
+                android:textStyle="bold" />
+        </TableRow>
+        //////////////////////////////////////////////////
+
+        <TableRow android:background="#A18DCD">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="Free thyroxin Index"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1503"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#84C0DC"
+                android:gravity="center_horizontal"
+                android:text="1.2-4.9"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
