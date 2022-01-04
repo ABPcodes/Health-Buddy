@@ -18,6 +18,8 @@ LinearLayout CBC,LIPID,HBA1C,THYROID,CRP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
+
+
     {
         super.onCreate(savedInstanceState);
         requestWindowFeature(1);
