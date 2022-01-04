@@ -193,6 +193,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"
                     android:gravity="center"
+                    android:id="@+id/thyroid"
                     android:orientation="vertical">
 
                     <ImageView
@@ -291,6 +292,7 @@
                     android:layout_height="match_parent"
                     android:background="@color/background_color_50"
                     android:gravity="center"
+                    android:id="@+id/crp"
                     android:orientation="vertical">
 
                     <ImageView

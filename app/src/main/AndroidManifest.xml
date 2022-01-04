@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
+            android:name=".CRPTABEL"
+            android:exported="false" />
+        <activity
+            android:name=".crp"
+            android:exported="false" />
+        <activity
+            android:name=".THYROIDTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".thyroid"
+            android:exported="false" />
+        <activity
             android:name=".LIPIDTABLE123"
             android:exported="false" />
         <activity

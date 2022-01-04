@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
 
-LinearLayout CBC,LIPID;
+LinearLayout CBC,LIPID,THYROID,CRP;
 
 
     @Override
@@ -26,6 +26,9 @@ LinearLayout CBC,LIPID;
 
         CBC = (LinearLayout) findViewById(R.id.cbc);
         LIPID = (LinearLayout) findViewById(R.id.lipid);
+        THYROID = (LinearLayout) findViewById(R.id.thyroid);
+        CRP = (LinearLayout) findViewById(R.id.crp);
+
 
         CBC.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,11 +46,23 @@ LinearLayout CBC,LIPID;
             }
         });
 
+       
+        THYROID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this,thyroid.class);
+                startActivity(intent3);
+            }
+        });
 
 
-
-
-
+        CRP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this,crp.class);
+                startActivity(intent4);
+            }
+        });
 
     }
 
