@@ -51,19 +51,19 @@ public class thyroid extends AppCompatActivity {
                         && e4.getText().toString().isEmpty()== true)
                 {
                     if (e1.getText().toString().isEmpty() == true) {
-                        Toast.makeText(getApplicationContext(), "Enter vlaue for White Blood Cell", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter value for THHuL", Toast.LENGTH_SHORT).show();
                     }
 
                     if (e2.getText().toString().isEmpty() == true) {
-                        Toast.makeText(getApplicationContext(), "Enter vlaue for Red Blood Cell", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter value for Thyroxine T4", Toast.LENGTH_SHORT).show();
                     }
 
                     if (e3.getText().toString().isEmpty() == true) {
-                        Toast.makeText(getApplicationContext(), "Enter vlaue for Platelet Count", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter value for T3 Uptake", Toast.LENGTH_SHORT).show();
                     }
 
                     if (e4.getText().toString().isEmpty() == true) {
-                        Toast.makeText(getApplicationContext(), "Enter vlaue for Heamoglobin", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Enter value for Free Thyroxine Index", Toast.LENGTH_SHORT).show();
                     }
                 }
 

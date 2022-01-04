@@ -43,7 +43,7 @@ public class crp extends AppCompatActivity {
                 if(e1.getText().toString().isEmpty()== true)
                 {
 
-                    Toast.makeText(getApplicationContext(), "Enter vlaue for White Blood Cell", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Enter value c reactive protein", Toast.LENGTH_SHORT).show();
 
                 }
                 else if(e1.getText().toString().isEmpty()== false) {

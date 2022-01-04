@@ -35,7 +35,7 @@ public class hba1c extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (ghbn.getText().toString().isEmpty() == true) {
-                    Toast.makeText(getApplicationContext(), "enter value", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "enter valuev for glycosylated", Toast.LENGTH_SHORT).show();
                 } else if (ghbn.getText().toString().isEmpty() == false) {
 
 
