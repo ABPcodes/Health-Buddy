@@ -172,7 +172,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
             android:padding="12dp"
-
+            app:icon="@drawable/ic_baseline_analytics_24"
             android:text="Check"
             app:cornerRadius="110dp"
             app:iconGravity="textStart">
