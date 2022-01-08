@@ -34,9 +34,18 @@ public class hba1c extends AppCompatActivity {
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ghbn.getText().toString().isEmpty() == true) {
+
+
+                if (ghbn.getText().toString().isEmpty() == true)
+
+                {
+
                     Toast.makeText(getApplicationContext(), "enter valuev for glycosylated", Toast.LENGTH_SHORT).show();
-                } else if (ghbn.getText().toString().isEmpty() == false) {
+                }
+
+                else if (ghbn.getText().toString().isEmpty() == false)
+
+                {
 
 
                     Double gly = Double.parseDouble(ghbn.getText().toString());
