@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
+            android:name=".RANDOMSUGARTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".randomsugar"
+            android:exported="false" />
+        <activity
+            android:name=".general_sugar"
+            android:exported="false" />
+        <activity
+            android:name=".SGPTTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".sgpt"
+            android:exported="false" />
+        <activity
             android:name=".CBCTABEL"
             android:exported="false" />
         <activity

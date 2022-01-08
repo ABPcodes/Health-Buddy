@@ -22,13 +22,17 @@ public class reports extends Fragment {
     }
 
 
-    LinearLayout CBC,LIPID,HBA1C,THYROID,CRP;
+    LinearLayout CBC,LIPID,THYROID,CRP,SGPT,GENERALSUGAR;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_reports, container, false);
+
+
+
+
 
 
         CBC = (LinearLayout) view.findViewById(R.id.cbc);
@@ -63,14 +67,15 @@ public class reports extends Fragment {
 
 
 
-        HBA1C = (LinearLayout) view.findViewById(R.id.hba1c);
-        HBA1C.setOnClickListener(new View.OnClickListener() {
+        SGPT = (LinearLayout) view.findViewById(R.id.sgpt);
+        SGPT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent4 = new Intent(getActivity(),hba1c.class);
+                Intent intent4 = new Intent(getActivity(),sgpt.class);
                 startActivity(intent4);
             }
         });
+
 
 
 
@@ -82,6 +87,21 @@ public class reports extends Fragment {
                 startActivity(intent5);
             }
         });
+
+
+        GENERALSUGAR = (LinearLayout) view.findViewById(R.id.generalsugar);
+        GENERALSUGAR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent6 = new Intent(getActivity(),general_sugar.class);
+                startActivity(intent6);
+            }
+        });
+
+
+
+
+
 
 
 

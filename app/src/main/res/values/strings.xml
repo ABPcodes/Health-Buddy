@@ -21,4 +21,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="BILIRUBIN_TOTAL">BILIRUBIN_TOTAL (mg/gl)</string>
+    <string name="BILIRUBIN_UNCONJUGATED">BILIRUBIN_UNCONJUGATED\t(mg/dl)</string>
+    <string name="BILIRUBIN_CONJUGATED">BILIRUBIN_CONJUGATED (mg/dl)</string>
+    <string name="SGOT">SGOT (U/L)</string>
+    <string name="SGPT">SGPT (U/L)</string>
+    <string name="ALKALINE_PHOSPHATASE">ALKALINE_PHOSPHATASE (U/L)</string>
+    <string name="TOTAL_PROTEIN">TOTAL_PROTEIN (gm/dl)</string>
+    <string name="ALBUMIN_SERUM">ALBUMIN,SERUM (gm/dl)</string>
+    <string name="GLOBULIN">GLOBULIN (gm/dl)</string>
+    <string name="A_G">A:G (ratio)</string>
+
+
 </resources>
