@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
+            android:name=".FASTINGSUGARTABLE"
+            android:exported="false" />
+        <activity
+            android:name=".fastingsugar"
+            android:exported="false" />
+        <activity
             android:name=".RANDOMSUGARTABLE"
             android:exported="false" />
         <activity
