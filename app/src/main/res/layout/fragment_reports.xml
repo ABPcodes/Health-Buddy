@@ -89,11 +89,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/general_img_background"
-                        android:padding="25dp"
-                        android:src="@drawable/dashboard"
-                        app:tint="#fff"></ImageView>
+                        android:src="@drawable/cbc12"
+                        android:padding="5dp"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
