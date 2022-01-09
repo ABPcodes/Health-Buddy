@@ -35,6 +35,7 @@
 
 
     <string name="FASTING_PLSAMA_GLUCOSE">FASTING PLSAMA GLUCOSE (mg/dl)</string>
+    <string name="select">Select Item</string>
 
 
 </resources>
