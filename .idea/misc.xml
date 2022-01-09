@@ -23,6 +23,7 @@
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/activity_thyroid.xml" value="0.2228310502283105" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/cbc.xml" value="0.2761743067345784" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/lipid.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_bmiactivity.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_cbctabel.xml" value="0.2228310502283105" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_fastingsugar.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_fastingsugartable.xml" value="0.22592592592592592" />
@@ -30,12 +31,15 @@
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_hba1_ctable.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_hba1c.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_main.xml" value="0.2228310502283105" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_main2.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_randomsugar.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_randomsugartable.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_sgpt.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_sgpttable.xml" value="0.21342592592592594" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/activity_splash.xml" value="0.21342592592592594" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/cbc.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_bmi.xml" value="0.21342592592592594" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_bmi.xml" value="0.264" />
+        <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_doctor.xml" value="0.2228310502283105" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_generalsugar.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_reports.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_reportsfragment.xml" value="0.22592592592592592" />

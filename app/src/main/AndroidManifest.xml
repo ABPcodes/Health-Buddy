@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
+            android:name=".bmiactivity"
+            android:exported="false" />
+        <activity
             android:name=".FASTINGSUGARTABLE"
             android:exported="false" />
         <activity
