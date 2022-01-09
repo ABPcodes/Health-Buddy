@@ -65,11 +65,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/general_img_background"
-                        android:padding="25dp"
-                        android:src="@drawable/dashboard"
-                        app:tint="#fff"></ImageView>
+                        android:padding="11dp"
+                        android:src="@drawable/hba1cp"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -122,11 +122,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/shopping_ing_background"
-                        android:padding="25dp"
-                        android:src="@drawable/shopping_cart"
-                        app:tint="#fff"></ImageView>
+                        android:padding="11dp"
+                        android:src="@drawable/rendomp"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -178,11 +178,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/entertainment_img_background"
-                        android:padding="25dp"
-                        android:src="@drawable/video_camera"
-                        app:tint="#fff"></ImageView>
+                        android:padding="11dp"
+                        android:src="@drawable/fastingp"
+                      ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
