@@ -135,11 +135,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/transport_ing_background"
-                        android:padding="25dp"
-                        android:src="@drawable/bus"
-                        app:tint="#fff"></ImageView>
+                        android:padding="5dp"
+                        android:src="@drawable/lipidlogo"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -190,11 +190,11 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_margin="20dp"
+                        android:layout_margin="5dp"
                         android:background="@drawable/shopping_ing_background"
-                        android:padding="25dp"
-                        android:src="@drawable/shopping_cart"
-                        app:tint="#fff"></ImageView>
+                        android:padding="5dp"
+                        android:src="@drawable/jay"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
