@@ -234,12 +234,12 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/bills_img_background"
-                        android:padding="5dp"
-                        android:src="@drawable/sgptp"
+                        android:padding="8dp"
+                        android:src="@drawable/jay12"
                         ></ImageView>
 
                     <TextView
@@ -340,8 +340,8 @@
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/grocery_img_background"
-                        android:padding="10dp"
-                        android:src="@drawable/suderp"></ImageView>
+                        android:padding="5dp"
+                        android:src="@drawable/sugarjp"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"

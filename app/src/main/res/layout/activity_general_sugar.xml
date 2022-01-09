@@ -66,10 +66,9 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/general_img_background"
+                        android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/hba1cp"
-                        ></ImageView>
+                        android:src="@drawable/hba1cp"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -123,10 +122,9 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/shopping_ing_background"
+                        android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/rendomp"
-                        ></ImageView>
+                        android:src="@drawable/rendomp"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -179,10 +177,9 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/entertainment_img_background"
+                        android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/fastingp"
-                      ></ImageView>
+                        android:src="@drawable/fastingp"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
