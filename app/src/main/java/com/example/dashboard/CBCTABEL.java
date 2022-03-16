@@ -38,15 +38,15 @@ public class CBCTABEL extends AppCompatActivity {
 
 
 
-        t1 = (TextView) findViewById(R.id.textView1500);
-        t2 = (TextView) findViewById(R.id.textView1501);
-        t3 = (TextView) findViewById(R.id.textView1502);
-        t4 = (TextView) findViewById(R.id.textView1503);
-        t5 = (TextView) findViewById(R.id.textView1504);
-        t6 = (TextView) findViewById(R.id.textView1505);
-        t7 = (TextView) findViewById(R.id.textView1506);
-        t8 = (TextView) findViewById(R.id.textView1507);
-        t9 = (TextView) findViewById(R.id.textView1508);
+        t1 = (TextView)      findViewById(R.id.textView1500);
+        t2 = (TextView)  findViewById(R.id.textView1501);
+        t3 = (TextView)  findViewById(R.id.textView1502);
+        t4 = (TextView)  findViewById(R.id.textView1503);
+        t5 = (TextView)  findViewById(R.id.textView1504);
+        t6 = (TextView)  findViewById(R.id.textView1505);
+        t7 = (TextView)  findViewById(R.id.textView1506);
+        t8 = (TextView)  findViewById(R.id.textView1507);
+        t9 = (TextView)  findViewById(R.id.textView1508);
         t10 = (TextView) findViewById(R.id.textView1509);
         t11 = (TextView) findViewById(R.id.textView15010);
         t12 = (TextView) findViewById(R.id.textView15011);

@@ -16,8 +16,13 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </androidx.viewpager.widget.ViewPager>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -35,24 +40,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/background_color_50"
+            app:tabIndicator="@color/teal_700"
             android:id="@+id/tableLayout1">
+
+
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/calendar"
+                android:icon="@drawable/ic_report_jaya_svg"
                 android:id="@+id/tab1"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/increase"
+                android:icon="@drawable/ic_bmi_jaya1_svg"
                 android:id="@+id/tab2"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/medal"
+                android:icon="@drawable/ic_doctor_jaya5_svg"
                 android:id="@+id/tab3"/>
 
         </com.google.android.material.tabs.TabLayout>

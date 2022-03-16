@@ -91,7 +91,7 @@
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/general_img_background"
-                        android:src="@drawable/cbc12"
+                        android:src="@drawable/cbcnew12"
                         android:padding="5dp"
                         ></ImageView>
 

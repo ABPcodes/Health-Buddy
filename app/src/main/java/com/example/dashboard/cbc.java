@@ -151,7 +151,7 @@ public class cbc extends AppCompatActivity {
                 {
 
                     Double wbc = Double.parseDouble(e1.getText().toString());
-                    Double rbc = Double.parseDouble(e2.getText().toString());
+                     Double rbc = Double.parseDouble(e2.getText().toString());
                     Double plc = Double.parseDouble(e3.getText().toString());
                     Double hmb = Double.parseDouble(e4.getText().toString());
                     Double pcv = Double.parseDouble(e5.getText().toString());

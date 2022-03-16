@@ -66,9 +66,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_margin="5dp"
-                        android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/hba1cp"></ImageView>
+                        android:src="@drawable/hba1cfinal"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -124,7 +123,7 @@
                         android:layout_margin="5dp"
                         android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/rendomp"></ImageView>
+                        android:src="@drawable/randomfinal"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -179,7 +178,7 @@
                         android:layout_margin="5dp"
                         android:background="@drawable/back"
                         android:padding="11dp"
-                        android:src="@drawable/fastingp"></ImageView>
+                        android:src="@drawable/fasingfinal"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"

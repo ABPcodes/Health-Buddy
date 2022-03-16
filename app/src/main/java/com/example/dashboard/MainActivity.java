@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         tabItem1 = (TabItem) findViewById(R.id.tab1);
         tabItem2 = (TabItem) findViewById(R.id.tab2);
         tabItem3 = (TabItem) findViewById(R.id.tab3);
+       // tabItem4 = (TabItem) findViewById(R.id.tab4);
         viewPager = (ViewPager) findViewById(R.id.vpager);
 
 
