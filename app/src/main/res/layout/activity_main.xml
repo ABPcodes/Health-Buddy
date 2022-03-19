@@ -48,20 +48,26 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_report_jaya_svg"
+                android:icon="@drawable/reportfinal"
                 android:id="@+id/tab1"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_bmi_jaya1_svg"
+                android:icon="@drawable/bmifinal"
                 android:id="@+id/tab2"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_doctor_jaya5_svg"
+                android:icon="@drawable/doctorfainal"
                 android:id="@+id/tab3"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/userfainal"
+                android:id="@+id/tab4"/>
 
         </com.google.android.material.tabs.TabLayout>
 

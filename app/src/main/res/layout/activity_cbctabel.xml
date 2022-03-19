@@ -1,564 +1,1095 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CBCTABEL">
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:orientation="vertical">
 
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#A18DCD"
-        android:gravity="center"
-        android:padding="2dp"
-        android:paddingLeft="3dp"
-        android:paddingTop="3dp"
-        android:paddingRight="3dp"
-        android:paddingBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:background="#A18DCD"
+            android:gravity="center"
+            android:padding="2dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="NAME"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#4D5868CC"
+                    android:text="OUTPUT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="IDEAL RANGE"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="White Blood Cell"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="4000-10500"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="RED BLOD CELL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1501"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="4.2-5.9"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="PLATELET_COUNT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1502"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="150000-450000"
+
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="HAEMOGLOBIN"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1503"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="14.0-15.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="PCV"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1504"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="42-52"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="Mean Cell Volume"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1505"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="80-100"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text=" Mean Cell Hemoglobin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1506"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="27.0-32.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="MEAN_CELL_HB_CONC"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1507"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="32.0-36.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="Red Cell Dist Width "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1508"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="11.5-14.5"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="NEUTROPHIL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1509"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="33-77"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="LYMPHOCYTE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="13-52"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="EOSINOPHIL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15011"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-5"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="POLYMORPHS"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15012"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="40-80"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="MONOCYTES"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15013"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-10"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="BASOPHILS"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15014"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-2"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/dipoutput"
+     android:layout_gravity="center"
+     android:gravity="center"></TextView>
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="#4D5868CC"
-                android:text="NAME"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#4D5868CC"
-                android:text="OUTPUT"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="#4D5868CC"
-                android:text="IDEAL RANGE"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="White Blood Cell"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1500"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="4000-10500"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="RED BLOD CELL"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1501"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="4.2-5.9"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="PLATELET_COUNT"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1502"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="150000-450000"
-
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="HAEMOGLOBIN"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1503"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="14.0-15.0"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="PCV"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1504"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="42-52"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="Mean Cell Volume"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1505"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="80-100"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text=" Mean Cell Hemoglobin"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1506"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="27.0-32.0"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="MEAN_CELL_HB_CONC"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1507"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="32.0-36.0"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="Red Cell Dist Width "
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1508"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="11.5-14.5"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="NEUTROPHIL"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1509"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="33-77"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="LYMPHOCYTE"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15010"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="13-52"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="EOSINOPHIL"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15011"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-5"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="POLYMORPHS"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15012"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="40-80"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="MONOCYTES"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15013"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-10"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="BASOPHILS"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView15014"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-2"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/dipoutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginTop="30dp"
+            >
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/WBC"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="White Blood:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/WBC2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(infection) \n High(inflammation in body) "
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+
+
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/RBC"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Red Blood:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/RBC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(fatigue, dizziness, and heart palpitations) \n High(thickening of the blood slow flow of blood)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/plt1"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Platelet:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/plt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(internal bleeding of the brain) \n High(weakness, bleeding, headache)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/hb"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Hemoglobin:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/hb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(fatigue trouble breathing)\n High(clots, heart attacks, and strokes)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/pcv"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="PCV:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/pcv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(blood loss, and failure of bone marrow)\n High(dehydration or abnormal increase[blood])"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mcv1"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Mean Cell:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/mcv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(anemia, a vitamin deficiency)\n High(inflammation in body)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mch"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Mean Hemoglobin:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/mch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(paler in color)\n High(shortness of breath chest pain)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mchc"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Mean HB CONC:-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mchc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(vitamin B12 or folic acid deficiency)\n High(red blood cells break down)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/rcdw"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Red Cell Dist Width:-"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rcdw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(red blood cells will be smaller than normal)\n High(nutrient and iron deficiency)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/nt"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:text="Neutrophil:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(dangerous infections)\n High(blood cancer or leukemia)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/lp"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Lymphocytes:-"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(viruses, fungi, parasites, or bacteria) High(inflammatory condition)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/ep"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Eosinophil:- "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ep1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(bone marrow)\n High(parasitic infection and cancer)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/pm"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Polymorphs:- "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/pm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(low concentration of granulocytes)\n High:-8 Blood cancers include"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mc"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Monocytes:- "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/mc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(chemotherapy and radiation therapy)\nHigh(chronic or sub-acute infections)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/bs"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Basophils:-"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(watery eyes, a runny nose red rash and hives)\nHigh(leukemia or autoimmune disease)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/whiteblood"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:text="Low White blood cell :-         infection \n High White blood cell :- inflammation in body"-->
+        <!--            android:textAlignment="center"-->
+        <!--             />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/redblood"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Low Red blood cell:-fatigue, dizziness, and heart palpitations \n High Red blood cell:-thickening of the blood slow flow of blood"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/platelet"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Platelet :-internal bleeding of the brain or the intestines \n High Platelet:-weakness, bleeding, headache"-->
+        <!--            android:textAlignment="center"-->
+        <!--            tools:layout_editor_absoluteX="141dp"-->
+        <!--            tools:layout_editor_absoluteY="717dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/haemoglobin"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Haemoglobin:- fatigue trouble breathing \n High Haemoglobin:-clots, heart attacks, and strokes"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/pcv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low PCV:-blood loss, and failure of bone marrow \n High PCv:-dehydration or an abnormal increase in blood"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/meancellvolume"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Mean Cell Volume:-anemia, a vitamin deficiency  \n High Mean Cell Volume:- iron deficiency or microcytic anemia"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/meancellhb"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low MCHBC:- paler in color \n High MCHBC:-cold agglutinin disease"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/recelldistwidth"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Red cell Dist:-red blood cells will be smaller than normal \n High Red cell dist:-nutrient and iron deficiency"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/neutrophil"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Neutrophil:-dangerous infections \n High Neutrophil:-blood cancer or leukemia"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/lymphocyte"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Lymphocyte:-viruses, fungi, parasites, or bacteria \n High lymphoctye:-inflammatory condition"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/eosinophil"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Eosinophil:-bone marrow \n High Eosinophil:-parasitic infection, an allergic reaction or cancer."-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/polymorphs"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Polymorphs:-low concentration of granulocytes \n High Polymorphs:-8 Blood cancers include"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/monocytes"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low Monocytes:-chemotherapy and radiation therapy \n High Monocytes:-chronic or sub-acute infections"-->
+        <!--            android:textAlignment="center" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/basophils"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Low asophils:-watery eyes, a runny nose, red rash and hives \n High Baophils:-leukemia or autoimmune disease."-->
+        <!--            android:textAlignment="center" />-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>

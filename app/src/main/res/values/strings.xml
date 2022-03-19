@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DASHBOARD</string>
+    <string name="app_name">HEALTH BUDDY</string>
     <string name="CHOLESTEROL">CHOLESTEROL</string>
     <string name="TRLGLYCERIDE">TRLGLYCERIDE</string>
     <string name="HDL_CHOLESTEROL">HDL CHOLESTEROL</string>

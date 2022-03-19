@@ -1,319 +1,558 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LIPIDTABLE123">
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".MainActivity">
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#A18DCD"
-        android:padding="2dp"
-        android:paddingLeft="3dp"
-        android:paddingTop="3dp"
-        android:paddingRight="3dp"
-        android:paddingBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:orientation="vertical">
 
-        <TableRow
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:background="#A18DCD"
+            android:gravity="center"
+            android:padding="2dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="NAME"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#4D5868CC"
+                    android:text="OUTPUT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="IDEAL RANGE"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="cholesterol"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-240"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="Trlglyceride"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1501"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-499"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="hdl cholesterol"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1502"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="35-60"
+
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="ldl cholesterol"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1503"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-160"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="vldl cholesgerol"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1504"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="6.0-38.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="CHOL/HDL RATIO"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1505"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="3.5-5.0"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="LDL/HDL RATIO"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1506"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="1.5-3.5"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="NON-HDL CHOLESTEROL"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1507"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="0-160"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dipoutput"
+            android:layout_gravity="center"
+            android:gravity="center"></TextView>
+
+
+
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#A18DCD">
+            android:layout_marginTop="30dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="#4D5868CC"
-                android:text="NAME"
-                android:textStyle="bold" />
+            <TableRow >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#4D5868CC"
-                android:text="OUTPUT"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/WBC"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="cholesterol:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:background="#4D5868CC"
-                android:text="IDEAL RANGE"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="cholesterol"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1500"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-240"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="Trlglyceride"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1501"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-499"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="hdl cholesterol"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1502"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="35-60"
-
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="ldl cholesterol"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1503"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-160"
-                android:textStyle="bold" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/WBC2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(depression cirrhosis) \n High(cardiovascular diseas) "
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
 
 
-        <TableRow android:background="#A18DCD">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="vldl cholesgerol"
-                android:textStyle="bold" />
+            <TableRow >
 
-            <TextView
-                android:id="@+id/textView1504"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/RBC"
+                    android:layout_width="138dp"
+                    android:layout_height="33dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Trlglyceride:-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="6.0-38.0"
-                android:textStyle="bold" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/RBC1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(reduce risk of heart diseas ) \n High(acute pancreatitis)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/plt1"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="hdl cholesterol:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/plt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(large risk of heart diseas) \n High(slow the process of clearing LDL)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/hb"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="ldl cholesterol:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/hb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(hemorrhagic storke)\n High(damage of arteries)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/pcv"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="vldl cholesgerol:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/pcv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(haert attack storke)\n High(restrict blood flow)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mcv1"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="CHOL/HDL RATIO:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/mcv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(coronary heart disease)\n High(heart disease)"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textSize="12sp"/>
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mch"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="LDL/HDL RATIO:-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/mch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(coronary heart disease)\n High(fat in our bloodstrim)"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="left" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:id="@+id/mchc"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="NON-HDL CHOLESTEROL:-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mchc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(plaqes forming to block artris)\n High(risk of devaloping atherosclerosis)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
 
 
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="CHOL/HDL RATIO"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1505"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="3.5-5.0"
-                android:textStyle="bold" />
-        </TableRow>
+        </TableLayout>
+    </LinearLayout>
 
 
-        <TableRow android:background="#A18DCD">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="LDL/HDL RATIO"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1506"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="1.5-3.5"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-        <TableRow android:background="#A18DCD">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="NON-HDL CHOLESTEROL"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1507"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#84C0DC"
-                android:gravity="center_horizontal"
-                android:text="0-160"
-                android:textStyle="bold" />
-        </TableRow>
-
-
-    </TableLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

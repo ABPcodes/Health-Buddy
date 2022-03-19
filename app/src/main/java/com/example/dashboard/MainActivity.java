@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TabLayout tabLayout;
-    TabItem tabItem1,tabItem2,tabItem3;
+    TabItem tabItem1,tabItem2,tabItem3,tabItem4;
     ViewPager viewPager;
     PageAdapter pageAdapter;
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         tabItem1 = (TabItem) findViewById(R.id.tab1);
         tabItem2 = (TabItem) findViewById(R.id.tab2);
         tabItem3 = (TabItem) findViewById(R.id.tab3);
-       // tabItem4 = (TabItem) findViewById(R.id.tab4);
+        tabItem4 = (TabItem) findViewById(R.id.tab4);
         viewPager = (ViewPager) findViewById(R.id.vpager);
 
 
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
                 viewPager.setCurrentItem(tab.getPosition());
 
-                if(tab.getPosition()==0 || tab.getPosition()==1 || tab.getPosition()==2)
+                if(tab.getPosition()==0 || tab.getPosition()==1 || tab.getPosition()==2 || tab.getPosition()==3)
                     pageAdapter.notifyDataSetChanged();
 
             }

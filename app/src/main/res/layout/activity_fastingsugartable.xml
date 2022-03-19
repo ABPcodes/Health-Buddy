@@ -1,103 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FASTINGSUGARTABLE">
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".MainActivity">
 
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#A18DCD"
-        android:gravity="center"
-        android:padding="2dp"
-        android:paddingLeft="3dp"
-        android:paddingTop="3dp"
-        android:paddingRight="3dp"
-        android:paddingBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    <TableRow
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#A18DCD">
+        android:textAlignment="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tabp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:background="#A18DCD"
+            android:gravity="center"
+            android:padding="2dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="NAME"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#4D5868CC"
+                    android:text="OUTPUT"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#4D5868CC"
+                    android:text="IDEAL RANGE"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="#A18DCD">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="White Blood Cell"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#84C0DC"
+                    android:gravity="center_horizontal"
+                    android:text="4000-10500"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dipoutput"
+            android:layout_gravity="center"
+            android:gravity="center"></TextView>
+
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="#4D5868CC"
-            android:text="NAME"
-            android:textStyle="bold" />
+            android:layout_marginTop="30dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="#4D5868CC"
-            android:text="OUTPUT"
-            android:textStyle="bold" />
+            <TableRow >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="#4D5868CC"
-            android:text="IDEAL RANGE"
-            android:textStyle="bold" />
-    </TableRow>
+                <TextView
+                    android:id="@+id/cr"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="White Blood Cell:-"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-    <TableRow android:background="#A18DCD">
+                <TextView
+                    android:id="@+id/cr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:text="Low(Low immune system)\nHigh(Blood cancer)"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="left" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="#84C0DC"
-            android:gravity="center_horizontal"
-            android:text="White Blood Cell"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView1500"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="#84C0DC"
-            android:gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="#84C0DC"
-            android:gravity="center_horizontal"
-            android:text="4000-10500"
-            android:textStyle="bold" />
-    </TableRow>
-
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/dipoutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        </TableLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
-            android:text="Health Report Anallyzer "
+            android:text="HEALTHBUDDY"
             android:textColor="@color/text_color_header"
             android:textSize="28sp"
             android:textStyle="bold" />

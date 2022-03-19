@@ -35,12 +35,10 @@
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_generalsugar.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_reports.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/anshp/AndroidStudioProjects/DASHBOARD2/app/src/main/res/layout/fragment_reportsfragment.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/anshp/StudioProjects/DASHBOARD_FINAL_FINAL/app/src/main/res/drawable-v24/ic_person.xml" value="0.2703125" />
-        <entry key="..\:/Users/anshp/StudioProjects/DASHBOARD_FINAL_FINAL/app/src/main/res/layout/fragment_bmi.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/anshp/StudioProjects/DASHBOARD_FINAL_FINAL/app/src/main/res/layout/fragment_doctor.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/anshp/StudioProjects/DASHBOARD_FINAL_FINAL/app/src/main/res/layout/singlerow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable-v24/ic_person.xml" value="0.2703125" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/bills_img_background.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/bottom_animation.xml" value="0.2703125" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/buttonbackground.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/cardbackground.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/entertainment_img_background.xml" value="0.2601851851851852" />
@@ -54,24 +52,37 @@
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/malefemalenotfocus.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/plusminus.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/shopping_ing_background.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/top_animation.xml" value="0.2703125" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/tp.xml" value="0.2703125" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/drawable/transport_ing_background.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/font/lato_bold.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/font/lato_thin.xml" value="0.2601851851851852" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_bmiactivity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_cbctabel.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_crp.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_crptabel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_fastingsugar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_fastingsugartable.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_general_sugar.xml" value="0.264" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_hba1_ctable.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_lipid123.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_lipidtable123.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_profile_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_randomsugar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_randomsugartable.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_sgpt.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_sgpttable.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_thyroid.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/activity_thyroidtable.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/cbc.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/fragment_bmi.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/fragment_doctor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/fragment_reports.xml" value="0.264" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/profile_2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD-FINAL____/app/src/main/res/layout/singlerow.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD/app/src/main/res/drawable/button.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/activity_crp.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/parth/AndroidStudioProjects/DASHBOARD/app/src/main/res/layout/activity_hba1_ctable.xml" value="0.25416666666666665" />

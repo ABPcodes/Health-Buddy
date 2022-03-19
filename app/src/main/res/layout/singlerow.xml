@@ -3,8 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="5dp"
+    app:cardCornerRadius="30dp"
     android:elevation="4dp"
+    android:focusable="true"
     app:cardUseCompatPadding="true">
 
 
@@ -13,13 +14,25 @@
         android:layout_height="wrap_content"
         android:padding="5dp">
 
+<!--        <ImageView-->
+<!--            android:id="@+id/img1"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/ic_person">-->
+
+<!--        </ImageView>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/img1"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/jay12"></ImageView>-->
+
         <ImageView
             android:id="@+id/img1"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_person">
 
-        </ImageView>
+            />
 
         <TextView
             android:id="@+id/t1"

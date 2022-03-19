@@ -27,6 +27,7 @@ public class PageAdapter extends FragmentPagerAdapter
             case 0 : return new reports();
             case 1 :  return new bmi();
             case 2 : return new doctor();
+            case 3 : return new profile();
             default:return null;
         }
 

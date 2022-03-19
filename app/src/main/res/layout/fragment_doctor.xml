@@ -16,6 +16,16 @@
         android:layout_margin="8dp"
         ></androidx.appcompat.widget.SearchView>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOCTORS AVAILABEL IN AHMEDABAD"
+        android:textAlignment="center"
+        android:fontFamily="@font/lato_black"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        ></TextView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
