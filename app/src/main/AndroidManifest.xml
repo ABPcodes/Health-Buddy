@@ -10,7 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DASHBOARD">
         <activity
-            android:name=".profile_view"
+            android:name=".cbcrcv"
+            android:exported="false" />
+        <activity
+            android:name=".sgptrcv"
+            android:exported="false" />
+        <activity
+            android:name=".fastingsugarrcv"
+            android:exported="false" />
+        <activity
+            android:name=".hba1crcv"
+            android:exported="false" />
+        <activity
+            android:name=".thyroidrcv"
+            android:exported="false" />
+        <activity
+            android:name=".lipidrcv"
+            android:exported="false" />
+        <activity
+            android:name=".crpu"
+            android:exported="false" />
+        <activity
+            android:name=".crprcv"
+            android:exported="false" />
+        <activity
+            android:name=".checkreporthistory"
+            android:exported="false" />
+        <activity
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".SPLASH_SCREEN"
@@ -71,7 +98,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class CBCTABEL extends AppCompatActivity {
 
 
@@ -25,6 +29,9 @@ public class CBCTABEL extends AppCompatActivity {
     boolean m = true;
     boolean n = true;
     boolean o = true;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -96,7 +103,21 @@ public class CBCTABEL extends AppCompatActivity {
 
 
 
-
+        String wbcdb = String.valueOf(wbc);
+        String rbcdb = String.valueOf(rbc);
+        String plcdb = String.valueOf(plc);
+        String hmbdb = String.valueOf(hmb);
+        String pcvdb = String.valueOf(pcv);
+        String mcvdb = String.valueOf(mcv);
+        String mchdb = String.valueOf(mch);
+        String mchcdb = String.valueOf(mchc);
+        String rcddb = String.valueOf(rcd);
+        String ntdb = String.valueOf(nt);
+        String lpdb = String.valueOf(lp);
+        String epdb = String.valueOf(ep);
+        String pmdb = String.valueOf(pm);
+        String mcdb = String.valueOf(mc);
+        String bpdb = String.valueOf(bp);
 
 
 
@@ -579,13 +600,13 @@ public class CBCTABEL extends AppCompatActivity {
         }
 
 
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClassCbc helperClassCbc = new UserHelperClassCbc(wbcdb,rbcdb,plcdb,hmbdb,pcvdb,mcvdb,mchdb,mchcdb,rcddb,ntdb,lpdb,epdb,pmdb,mcdb,bpdb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("CBC").push().setValue(helperClassCbc);
+
     }
-
-
-
-
-
-
 
 
 

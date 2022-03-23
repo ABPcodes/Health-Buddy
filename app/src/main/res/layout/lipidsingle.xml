@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/t1l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/t2l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t1l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/t3l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t2l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/t4l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t3l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/t5l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t4l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/t6l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t5l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/t7l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t6l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:id="@+id/t8l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/t7l"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+

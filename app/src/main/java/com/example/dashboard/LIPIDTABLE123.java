@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class LIPIDTABLE123 extends AppCompatActivity {
 
     TextView t1,t2,t3,t4,t5,t6,t7,t8;
@@ -17,6 +21,9 @@ public class LIPIDTABLE123 extends AppCompatActivity {
     boolean f = true;
     boolean g = true;
     boolean h = true;
+    private FirebaseAuth mAuth;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +70,20 @@ public class LIPIDTABLE123 extends AppCompatActivity {
         chohdl = lipidr.getDoubleExtra("chohdl", 0);
         ldlhdl = lipidr.getDoubleExtra("ldlhdl", 0);
         non_hdl = lipidr.getDoubleExtra("non_hdl", 0);
+
+
+
+        String chldb = String.valueOf(chl);
+        String tildb = String.valueOf(til);
+        String hdlcdb = String.valueOf(hdlc);
+        String ldlcdb = String.valueOf(ldlc);
+        String vldlcdb = String.valueOf(vldlc);
+        String chohdldb = String.valueOf(chohdl);
+        String ldlhdldb = String.valueOf(ldlc);
+        String non_hdldb = String.valueOf(non_hdl);
+
+
+
 
 
         if (chl != null) {
@@ -258,6 +279,15 @@ public class LIPIDTABLE123 extends AppCompatActivity {
             }
 
         }
+
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClassLipid helperClassLipid = new UserHelperClassLipid(chldb,tildb,hdlcdb,ldlcdb,vldlcdb,chohdldb,ldlhdldb,non_hdldb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("LIPID").push().setValue(helperClassLipid);
+
+
+
 
     }
 }

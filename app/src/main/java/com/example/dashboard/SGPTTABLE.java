@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class SGPTTABLE extends AppCompatActivity {
 
 
@@ -23,6 +27,9 @@ public class SGPTTABLE extends AppCompatActivity {
     boolean j = true;
 
 
+    private FirebaseAuth mAuth;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +79,16 @@ public class SGPTTABLE extends AppCompatActivity {
         g = sgptr.getDoubleExtra("g", 0);
         ag = sgptr.getDoubleExtra("ag", 0);
 
+        String bitdb = String.valueOf(bit);
+        String biodb = String.valueOf(biu);
+        String bicdb = String.valueOf(bic);
+        String sgotdb = String.valueOf(sgot);
+        String sgptdb= String.valueOf(sgpt);
+        String apdb= String.valueOf(ap);
+        String tpdb = String.valueOf(tp);
+        String asdb = String.valueOf(as);
+        String gdb = String.valueOf(g);
+        String agdb = String.valueOf(ag);
 
         if(bit != null) {
 
@@ -401,6 +418,11 @@ public class SGPTTABLE extends AppCompatActivity {
 
 
 
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClassSgpt userHelperClassSgpt = new UserHelperClassSgpt(bitdb,biodb,bicdb,sgotdb,sgptdb,apdb,tpdb,asdb,gdb,agdb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("SGPT").push().setValue(userHelperClassSgpt);
 
 
     }

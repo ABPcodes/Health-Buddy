@@ -7,11 +7,18 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class HBA1CTABLE extends AppCompatActivity {
 
 
     TextView t1,t2;
     boolean a =true;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -28,6 +35,9 @@ public class HBA1CTABLE extends AppCompatActivity {
         Intent hba1ct  = getIntent();
 
         gly = hba1ct.getDoubleExtra("glycosylated", 0);
+
+        String glydb = String.valueOf(gly);
+
 
 
         if(gly != null)
@@ -67,7 +77,7 @@ public class HBA1CTABLE extends AppCompatActivity {
 
         }
 
-        if(a=true)
+        if(a==true)
         {
             t2.setText("YOUR REPORT IS NORMAL");
         }
@@ -75,6 +85,14 @@ public class HBA1CTABLE extends AppCompatActivity {
         {
             t2.setText("YOUR REPORT IS NOT NORMAL");
         }
+
+
+
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClassHba1c userHelperClassHba1c = new UserHelperClassHba1c(glydb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("HBA1C").push().setValue(userHelperClassHba1c);
 
 
     }

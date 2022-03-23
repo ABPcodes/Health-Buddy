@@ -35,7 +35,7 @@ public class myadapter extends RecyclerView.Adapter<myviewholder>
         holder.t1.setText(data.get(position).getHeader());
         holder.t2.setText(data.get(position).getDesc());
         holder.t3.setText(data.get(position).getDesc3());
-        holder.img.setImageResource(data.get(position).getImgname());
+
     }
 
     @Override

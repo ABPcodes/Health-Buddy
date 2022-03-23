@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class THYROIDTABLE extends AppCompatActivity {
 
     TextView t1,t2,t3,t4;
@@ -13,6 +17,9 @@ public class THYROIDTABLE extends AppCompatActivity {
     boolean b = true;
     boolean c = true;
     boolean d = true;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,11 @@ public class THYROIDTABLE extends AppCompatActivity {
         T3U = thyroidr.getDoubleExtra("T3U", 0);
         FIT = thyroidr.getDoubleExtra("FIT", 0);
 
+
+        String tshdb = String.valueOf(TSH);
+        String tyidb = String.valueOf(TYI);
+        String t3udb = String.valueOf(T3U);
+        String fitdb = String.valueOf(FIT);
 
 
         if (TSH != null) {
@@ -133,6 +145,19 @@ public class THYROIDTABLE extends AppCompatActivity {
             }
 
         }
+
+
+
+
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClassThyroid helperClassThyroid = new UserHelperClassThyroid(tshdb,tyidb,t3udb,fitdb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("THYROID").push().setValue(helperClassThyroid);
+
+
+
+
 
 
     }

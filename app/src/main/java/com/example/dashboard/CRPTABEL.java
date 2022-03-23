@@ -6,11 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class CRPTABEL extends AppCompatActivity {
 
-
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
     TextView t1;
     boolean a = true;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +27,14 @@ public class CRPTABEL extends AppCompatActivity {
 
         Double CRP;
 
+
         Intent crpr = this.getIntent();
 
         CRP = crpr.getDoubleExtra("CRP", 0);
+
+
+        String crpdb = String.valueOf(CRP);
+
 
         if(CRP != 0)
         {
@@ -51,6 +62,16 @@ public class CRPTABEL extends AppCompatActivity {
             }
 
         }
+
+
+
+
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("user");
+        UserHelperClass helperClass = new UserHelperClass(crpdb);
+        reference.child(mAuth.getInstance().getCurrentUser().getUid()).child("CRP").push().setValue(helperClass);
+
 
     }
 }

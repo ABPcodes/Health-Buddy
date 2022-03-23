@@ -39,7 +39,7 @@ public class SPLASH_SCREEN extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SPLASH_SCREEN.this,MainActivity.class);
+                Intent intent=new Intent(SPLASH_SCREEN.this,login.class);
                 Pair[] pairs= new Pair[2];
                 pairs[0] = new Pair<View,String>(image,"logo_image");
                 pairs[1] = new Pair<View,String>(name,"logo_text");
